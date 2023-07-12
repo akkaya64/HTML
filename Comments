@@ -1,4 +1,4 @@
-<p> == paragraf olusturur
+<p> == yazilari paragraf olusturur
 br == code veya metni bir alt satira gecirir
 p*5>Lorem*6 == 5 tane paragraf olusturur her bir paragrafa 6 sar tane lorem metnini yazar
 <hr> == kullanildigi satirin altina bir cizgi ceker
@@ -6,5 +6,250 @@ p*5>Lorem*6 == 5 tane paragraf olusturur her bir paragrafa 6 sar tane lorem metn
 <!--  ikili rarasindaki tum codelar coment e alinir -->,  
 SHIFT+ALT+A combinasyonu ilede sectigimiz code blogunu commente alabiliriz ayni zamanda
             bos bir comment de olusturabiliriz.
+<hx> yazilari baslik haline getirir. standart 6 tane baslik tagi
+     bulunmaktadir <h1><h2><h3><h4><h5><h6> SEO icin sayfadaki en onemli bilgi buraya yazilmalidir
+     her sayfada bir tane h1 olmalidir. bu bilgi ayni zamanda insanl;arin sayfayi nasil bulacagi ilede alakali olmalidir
+     sonrasinda gelecek hx tag lari hiyerarsi icinde olmalidir.
+<strong> Metinleri kalinlaştirmak için kullanilirlar. Strong taginin b ye göre semantic değeri 
+    daha fazladir. <strong> Kumas Numune Kitabi </strong>
+<b> Metinlerin bold olarak yazilmasini saglar <b>endüstri</b>
+<em> (emphasis) Yaziyi eğik (italik) yazdirmak için kullanilirlar. em taginin,i tagina göre semantic değeri 
+    daha fazladir <em>Merhaba</em>
+<i> italic yaziyi italik olarak yazar <i>Merhaba</i>
+<u> (underline) Yazinin altini cizmek icin kullanilir. <u>Bu yazinin altini çizer</u>
+<del> (delete) Yazinin üstünü çizmek için kullanilir. Özellikle alişveriş sitelerindeki 
+    indirimsiz fiyati gösterirken kullanilir. <del>52₺</del>
+<pre> Development ortamindaki beyaz alanlarin aynen ziyaretçi tarafina yansitilmasi için kullanilir.
+    <pre>Hello World</pre>
+<mark> Yazilari vurgulamak için kullanilir. Highlight özelliği kazandirir. <mark>Techproeducation</mark>
+<sub>(subscript)Alt simge olarak göstermek için kullanilir
+    F<sub>2</sub>
+<sup> (superscript) Üst simge olarak göstermek için kullanilir X<sup>2</sup>
+Listeleme Taglari
+<ol> (Ordered list) Numarali liste oluşturmak için kullanilir <ol></ol>
+<li> (List item) <ol>
+                    <li>Beşiktaş</li> 
+                    <li>Galatasaray</li> 
+                    <li>Fenerbahçe</li>
+                 </ol>
+<ul> (Unordered list) Madde işaretli liste oluşturmak için kullanilir <ul></ul>
+<li> (List item) Listeye eleman eklemek için kullanilir
+                    <ul>
+                       <li>Beşiktaş</li> 
+                       <li>Galatasaray</li> 
+                       <li>Fenerbahçe</li>
+                    </ul>
+<dl> (defination list) Tanimlama listesi oluşturmak için kullanilir <dl></dl>
+<dt> (defination term) Listeye tanimlama terimi eklemek için kullanilir <dt>HTML</dt>
+<dd> (Def. description) Terimin açiklamasini eklemek için kullanilir
+      <dl>
+         <dt>HTML</dt>
+         <dd>Web sayfasi oluşturmak için kullanilan işaretleme dilidir.</dd>
+      </dl>
+İç içe liste oluşturma
+      <ol>
+          <li>İstanbul
+              <ul>
+                   <li>Beşiktaş</li>
+                   <li>Fenerbahçe</li>
+                   <li>Galatasaray</li>
+              </ul>
+          </li>
+          <li>İzmir
+               <ul>
+                   <li>Altay</li>
+                   <li>Karşiyaka</li>
+               </ul>
+           <li> 
+      </ol>      
+Liste türünü değiştirme
+      <ol type="1 | A | a | I | i"> 
+        <li>Beşiktaş</li> 
+        <li>Fenerbahçe</li> 
+        <li>Galatasaray</li>
+      </ol>
+
+      <ul type="disc | square | circle"> 
+        <li>Beşiktaş</li> 
+        <li>Fenerbahçe</li> 
+        <li>Galatasaray</li>
+      </ul>
+
+      <ol type="a" start="3"> 
+        <li>Beşiktaş</li> 
+        <li>Fenerbahçe</li> 
+        <li>Galatasaray</li>
+      </ol>
+
+Bağlanti tagi 
+<a> (anchor) Aşağida belirtildiği gibi bir yerden başka bir yere bağlanti oluşturmak için kullanilir
+     Bir sayfadan başka bir sayfaya,
+     Ayni sayfanin farkli bölümlerine,
+     Başka bir sayfanin farkli bir bölümüne 
+     Farki bir siteye
+     Eposta adresine
+     Telefon numarasina
+     Whatsapp uygulamasina
+     Dosyaya 
+
+    Bir sayfadan başka bir sayfaya link vermek için:
+       <a href="sayfa1.html" title="Ucuz bilgisayarlar"> Tikla</a>  --> sayfa1.html
+                           index.html
+SEO A tagi içinde kullanilan title attribute' u SEO için çok önemlidir. Arama motorlarinin 
+    indeksleme için baktiklari yerlerden biridir.
+      
+    Ayni sayfada farkli bir bölüme link vermek için                   
+         <a href="#urunler">Tikla</a>
+          .
+          .
+          .
+          .
+          .
+          .
+          .
+          .
+          .
+          .
+          <h2 id="urunler">Ürünler</h2>
+    
+   Bir sayfadan başka bir sayfanin farkli bir bölümüne link vermek için:
+   <a
+   href="sayfa1.html#projeler">Tikla</a>     
+
+   index.html
+   _____________________    
+   .
+   .
+   .
+   <p id="projeler"></p>
+   .
+   .
+   sayfa1.html
+   _____________________
+
+   Başka bir siteye link vermek için: <a href="https://google.com.tr">Google' a Git</a>
+   Bir dosyaya link vermek: <a href="img/resim1.jpg">Fotoğrafi aç</a>   
+   Bağlantiyi yeni bir sekmede açmak için <a href="https://google.com.tr" target="_blank">Google' a Git</a>
+   Eposta adresine link vermek için: <a href="mailto:zsari@techproed.com">Eposta Gönder</a>
+   Telefon numarasina link vermek için: <a href="tel:+905552226633">Ara</a>
+   Whatsapp numarasina link vermek için: <a href="https://wa.me/905552226633">Whatsapp</a>, <a href="https://wa.me/905552226633?text=Merhaba">Whatsapp</a>
+   HTML olmayan bir dosyaya link verildiğinde browser bu dosyayi görüntüleyebiliyorsa görüntüler yoksa download yapar.
+        <a href="products.pdf">Products</a>
+
+*Fotoğraf ekleme*
+<img> (image) Fotoğraf ekleme işlemleri img tagi ile yapilir. Jpg, png, webp ve svg tercih edilir.
+      <img src="img/acer-aspire-one-notebook.jpg" alt="Acer Aspire One Notebook" width="100" height="75">
+*SEO* img tagi içinde kullanilan alt attribute' u SEO için önemlidir. Arama motorlarinin indeksleme için baktiklari yerlerden biridir.
+Fotoğraf ekleme işlemleri img tagi ile yapilir. Jpg, png, webp ve svg tercih edilir.
+Free image stores: freepik.com, unsplash.com, pexels.com, flaticon.com 
+                                                RASTER                                                      VECTOR
+                        JPG               GIF               PNG                  WEBP                        SVG
+Kullanim alani    Digital Fotoğraf  Basit Animasyon  Logo, ikon, grafik         Hepsi           Logo, ikon, grafik, animasyon
+Sikistirma              İyi           Fena Değil             İyi               Daha iyi                    Mükemmel
+Sikistirma              **                *                   -                   ***                          -
+Yüksek Çözünürlük       İyi              Yok                 İyi                  İyi                      Mükemmel
+Renk Sayisi         Milyonlarca          256           256 - Milyonlarca      Milyonlarca                   Sinirsiz
+Şeffaf zemin            Yok              Yok                 Var                  Var                         Var
+Browser Desteği         ***              ***                 ***                  **                          ***
+            
+*Sayfaya ses ekleme*
+<audio> Sayfaya ses ekleme işlemi auido tagi ile yapilir
+    <audio controls autoplay muted>
+        <source src="music1.mp3" type="audio/mp3">
+        Your browser does not support the audio element.
+    </audio>
+Mp3, wav, ogg uzantılı dosyalar kullanılabilir ancak tarayıcıların en çok desteklediği mp3 tür.
+Free music stores: pixabay.com
+
+*Sayfaya video ekleme* 
+<video>  Sayfaya video ekleme işlemi video tagı ile yapılır
+    <video width="320" height="240" controls autoplay muted> <source src="movie1.mp4" type="video/mp4">
+        Your browser does not support the video tag.
+    </video>
+
+MP4, WEBM, OGG uzantılı dosyalar kullanılabilir ancak, en çok desteklenen mp4 tür.
+Free video stores: pexels.com
+
+*Iframe*
+<iframe> Sayfa içinde farklı bir sitenin sayfasını görüntülemek için kullanılır. Harita ve youtube videoları bu şekilde eklenir.
+    <iframe src="https://www.w3schools.com" title="W3Schools Free Online Web Tutorials"></iframe>
+
+
+*Harita ekleme*
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+                    
+
+HTML entities Html dilinde özel olan karakterleri ya da klavyede bulunmayan karakterleri yazdirmak 
+için çeşitli kodlar bulunmaktadir. Bunlara html entities denir. https://www.w3schools.com/html/html_entities.asp
+İşaret      Html Kod
+(Boşluk)    &nbsp;
+<           &lt;
+>           &gt;
+"           &quot;
+&           &amp;
+©           &copy;
+®           &reg;
+TM          &trade;
+
+
+
+************************
+INTERVIEW QOUESTON: HTML5 in önceki versiyonlara göre avantajlari nelerdir?
+Multimedia Taglari <video> : video eklemek için nav, <audio>: ses eklemek için figure
+Çizim Canvas (bitmap) Svg (vector)
+Semantik taglar header, footer, main, section, aside, article
+Input lar için yeni type lar
+Datetime, Datetime-local, Date, Time, Week, Month, email, Tel, url, search, range, number, color
+Input lar için yeni attribute lar
+       placeholder: inputlar boşken yönlendirici metinler konuşabilir. 
+       regex: regular expression tanimlamak için
+
+INTERVIEW QUESTION: HTML de kaç çeşit listeleme türü vardir. 
+OL: Ordered List,
+UL: Unordered List,
+DL: Defination List
+
+INTERVIEW QUESTION: Attribute nedir?
+attribute Html taginin içine yazilan ve html tagina ek özellikler katan ifadelere denir.
+
+INTERVIEW QUESTION: HTML5 te desteklenen ses dosya türleri hangileridir.
+Mp3, wav, ogg uzantılı dosyalar kullanılabilir ancak tarayıcıların en çok desteklediği mp3 tür.
+
+INTERVIEW QUESTION:: Bir web sayfasının içine başka bir web sayfası yerleştirmenin yolu nedir?
+<iframe>
+
+************************
+Biçimlendirme Taglari
+Progress, Datalist, Details, Embed, Mark, Meter, Output
+Dinamik Özellikler (API)
+Geolocation, Web storage (Local, Session), Drag-drop, Web workers, SSE (Server Side Events)
+
+************************
+White Spaces Tarayicilar, HTML kodlarindaki peş peşe space (boşluk) karakterlerini tek bir karakter 
+olarak yorumlarlar. Ayrica enter (alt satira geçme) karakterini ise hiç yorumlamazlar. 
+Bu sayede developerlar kodlarini daha okunabilir şekilde yazabilirler.
+
+************************
+Semantic
+Semantic taglar, arama motorlari veya geliştiriciler için bir anlam içerirler. 
+Bu tür taglar kapsadiklari elemani taşidiklari anlama göre belli bir forma sokarlar.
+Non-Semantic
+Semantic olmayan taglar, anlamsizdirdlar. Sadece semantic taglari gruplamak için kullanilirlar.
+<div> ve <span>
 
 https://www.sempeak.com/seo
+w3schools.com/tags
+caniuse.com
