@@ -1,0 +1,10 @@
+<p> == paragraf olusturur
+br == code veya metni bir alt satira gecirir
+p*5>Lorem*6 == 5 tane paragraf olusturur her bir paragrafa 6 sar tane lorem metnini yazar
+<hr> == kullanildigi satirin altina bir cizgi ceker
+<!-- == altindaki tum code lari comment e alir
+<!--  ikili rarasindaki tum codelar coment e alinir -->,  
+SHIFT+ALT+A combinasyonu ilede sectigimiz code blogunu commente alabiliriz ayni zamanda
+            bos bir comment de olusturabiliriz.
+
+https://www.sempeak.com/seo
