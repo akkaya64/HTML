@@ -20,7 +20,7 @@ SHIFT+ALT+A combinasyonu ilede sectigimiz code blogunu commente alabiliriz ayni 
 <del> (delete) Yazinin üstünü çizmek için kullanilir. Özellikle alişveriş sitelerindeki 
     indirimsiz fiyati gösterirken kullanilir. <del>52₺</del>
 <pre> Development ortamindaki beyaz alanlarin aynen ziyaretçi tarafina yansitilmasi için kullanilir.
-    <pre>Hello World</pre>
+    <pre>Hello                       World</pre>
 <mark> Yazilari vurgulamak için kullanilir. Highlight özelliği kazandirir. <mark>Techproeducation</mark>
 <sub>(subscript)Alt simge olarak göstermek için kullanilir
     F<sub>2</sub>
